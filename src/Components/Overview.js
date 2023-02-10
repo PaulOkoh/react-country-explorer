@@ -25,21 +25,31 @@ const Overview = () => {
         </tr>
         <tr>
           <td>Capitol:</td>
+          {currentDisplay.capital.map((e) =>(
+            <td>{e}</td>
+          ))}
         </tr>
         <tr>
           <td>Population:</td>
+          <td>{currentDisplay.population}</td>
         </tr>
         <tr>
           <td>Continents:</td>
+          {currentDisplay.continents.map((e) => (
+            <td>{e}</td>
+          ))}
         </tr>
         <tr>
           <td>Independent:</td>
+          <td>{currentDisplay.independent ? "true" : "false"}</td>
         </tr>
         <tr>
           <td>Landlocked:</td>
+          <td>{currentDisplay.landlocked ? "true" : "false"}</td>
         </tr>
         <tr>
           <td>Member of UN:</td>
+          <td>{currentDisplay.unMember ? "true" : "false"}</td>
         </tr>
 
       </table>
